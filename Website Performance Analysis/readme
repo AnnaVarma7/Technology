@@ -1,0 +1,67 @@
+🌐 Website Performance Analysis & Traffic Forecasting
+This project presents a complete analysis of a website's performance using real-world session data. It covers traffic trends, user engagement, marketing channel effectiveness, and forecasts future traffic using time series modeling.
+
+📦 Dataset Overview
+Columns Included:
+Session primary channel group: Traffic source (e.g., Direct, Organic Search)
+Date + hour (YYYYMMDDHH): Timestamp of sessions
+Users: Unique users
+Sessions: Website sessions
+Engaged sessions: Actively engaged sessions
+Average engagement time per session: Avg time per session
+Engaged sessions per user: Engagement ratio
+Events per session: Avg user actions
+Engagement rate: % of engaged sessions
+Event count: Total actions
+
+🧰 Tools & Libraries
+Python, Pandas, NumPy
+Matplotlib, Seaborn, Plotly
+Statsmodels – Time series modeling (SARIMA)
+
+📊 Analysis Breakdown
+1. 📈 Session & User Trends
+Grouped hourly session/user data.
+Visualized traffic spikes and dips.
+Identified potential marketing or seasonal influence on peaks.
+
+2. 🔍 User Engagement Metrics
+Analyzed:
+Avg engagement time
+Engagement rate
+Events/session
+Engaged sessions/user
+Visualized trends and fluctuations over time.
+
+3. 🔗 Correlation Analysis
+Scatter plots between key engagement metrics.
+Found:
+Strong positive correlation between engagement rate and engaged sessions/user.
+No strong relation between engagement time and event count.
+
+4. 📣 Channel Performance
+Segmented traffic by marketing channels.
+Aggregated and normalized:
+Total users and sessions
+Engagement rate
+Events/session
+Identified top-performing channels by both volume and engagement quality.
+
+🔮 Traffic Forecasting with SARIMA
+Created a SARIMA model using hourly session data.
+Used ACF/PACF plots to determine parameters (p=1, d=1, q=1).
+Forecasted sessions for the next 24 hours.
+Visualized historical and predicted traffic trends.
+
+📌 Key Insights
+Organic Search brings high traffic but not necessarily high engagement.
+Referral and Organic Video channels provide better engagement quality.
+Engagement metrics fluctuate with time, suggesting influence of content, campaigns, or time of day.
+Forecasting provides a reliable view of near-future website traffic for planning and scaling.
+
+📁 Project Highlights
+✅ Time-based aggregation
+✅ Interactive visualizations
+✅ Marketing channel comparison
+✅ Engagement behavior analysis
+✅ SARIMA time series forecasting
