@@ -1,0 +1,53 @@
+🧠 Next Word Prediction Model using LSTM in Python
+This project implements a Next Word Prediction model using LSTM-based neural networks trained on Sherlock Holmes stories. It demonstrates how sequential context in natural language can be used to predict the most probable next word, a fundamental task in NLP applications like messaging apps and search engines.
+
+🎯 Objective
+To build a neural network model that predicts the next word in a sequence, using historical text data as context.
+
+🧰 Tools & Libraries
+Python
+TensorFlow / Keras
+NumPy
+Sherlock Holmes plain text dataset
+
+📁 Dataset
+Source: sherlock-holm.es_stories_plain-text_advs.txt
+Preprocessing: Text cleaned and tokenized into sequences
+
+🔄 Workflow Summary
+1. Tokenization
+Text split into tokens using Keras Tokenizer
+
+Vocabulary limited to 10,000 most frequent words
+
+2. Input Sequence Creation
+Created n-gram sequences for training (e.g., “I will” → “leave”)
+Padded sequences to uniform length
+
+3. Model Preparation
+Input: All tokens except the last
+Target: Last token in the sequence (the word to predict)
+
+4. Neural Network Architecture
+Embedding → LSTM (150 units) → LSTM (100 units) → Dense (Softmax)
+Total parameters: ~1.9 million
+Optimizer: adam
+Loss Function: sparse_categorical_crossentropy
+
+5. Training
+Model trained on padded sequences
+One-hot encoding applied to output labels
+Training time: ~1 hour (depending on compute)
+
+📈 Prediction Example
+Seed Text:
+I will leave if they
+Generated Output (3 words):
+
+I will leave if they tilted tilted future
+Note: Results may vary based on training duration and text preprocessing.
+
+📌 Key Takeaways
+LSTMs are well-suited for capturing long-term dependencies in text.
+The model learns to predict contextually relevant next words using training data.
+With more training data and epochs, output quality improves.
