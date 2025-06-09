@@ -1,0 +1,53 @@
+😊 Text Emotion Classification
+This project builds a machine learning model that classifies the emotional tone of text. Inspired by real-world applications like iPhone emoji suggestions, this NLP model predicts emotions like joy, anger, sadness, and more.
+
+🎯 Objective
+Preprocess and tokenize text data
+Build a neural network for multi-class emotion classification
+Predict the emotional tone of any new sentence
+
+🧰 Tools & Libraries
+Python
+TensorFlow / Keras – Deep learning model
+Scikit-learn – Label encoding, train/test split
+NLTK – Text preprocessing
+Pandas, NumPy – Data handling
+
+📁 Dataset Overview
+File: train.txt
+Format: Semicolon-separated (;)
+Columns:
+Text: The sentence/text sample
+Emotions: The emotion label (e.g., joy, fear, sadness)
+
+🔄 Preprocessing Steps
+Tokenization – Convert text to sequences of integers
+Padding – Normalize input length for model input
+Label Encoding – Convert emotion labels to numeric
+One-hot Encoding – For multi-class classification
+
+🧠 Model Architecture
+Embedding Layer – Word vector representations
+Flatten Layer
+Dense Layer (ReLU)
+Output Layer (Softmax for multi-class classification)
+
+🔧 Training
+Loss: categorical_crossentropy
+Optimizer: adam
+Epochs: 10
+Batch Size: 32
+Final Accuracy: ~99.7% (train) and ~82.9% (validation)
+
+🧪 Sample Prediction
+input_text = "She didn't come today because she lost her dog yesterday!"
+Output:
+['sadness']
+              
+📈 Model Performance
+High training accuracy indicates the model learned well.
+Validation accuracy suggests good generalization on unseen data.
+Emotion predictions work well even with short or informal sentences.
+
+💡 Conclusion
+This model successfully classifies emotions from text, a foundational capability in sentiment analysis, mental health monitoring, chatbot design, and smart keyboard predictions.
