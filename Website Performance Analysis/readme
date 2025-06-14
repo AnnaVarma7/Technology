@@ -20,12 +20,12 @@ Matplotlib, Seaborn, Plotly
 Statsmodels – Time series modeling (SARIMA)
 
 📊 Analysis Breakdown
-1. 📈 Session & User Trends
+1.  Session & User Trends
 Grouped hourly session/user data.
 Visualized traffic spikes and dips.
 Identified potential marketing or seasonal influence on peaks.
 
-2. 🔍 User Engagement Metrics
+2.  User Engagement Metrics
 Analyzed:
 Avg engagement time
 Engagement rate
